@@ -1,0 +1,29 @@
+your_name=input('Your name: ').lower()
+crush_name=input('Your crush name: ').lower()
+
+
+
+both_names= your_name + crush_name
+
+L=both_names.count('l')
+O=both_names.count('o')
+V=both_names.count('v')
+E=both_names.count('e')
+
+T=both_names.count('t')
+R=both_names.count('r')
+U=both_names.count('u')
+
+
+love= str(L + O + V + E) 
+tru= str(T + R + U + E)
+
+score= int(tru + love)
+
+#print(tru + love)
+if score <40:
+  print(f'Your score is {score}. You go together like Coke and Mentos!')
+elif score >40 and score <90:
+  print(f'Your score is {score}. You are alright together.')
+elif score >= 90:
+  print(f'Your score is {score}. You two are made for each other!')
